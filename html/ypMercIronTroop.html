@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title id="title">铁军</title>
+	<link rel="stylesheet" href="../css/style2.css">
+	<script src="../js/vue.js"></script>
+	<script type="text/javascript" src="../js/script2.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+	<div>
+		<div class="header1">
+			<div class="header2">帝国时代3：决定版 单位手册</div>
+			<div>Age of Empires 3 : Definitive Edition Unit Manual</div>
+		</div>
+	</div>
+	<div id="body" class="body" v-cloak>
+		<div class="list" ref="list">
+			<div class="srt"><p class="grey">基本描述：</p>{{shortrollovertext}}</div>
+			<div class="rt"><p class="grey">单位简介：</p>{{rollovertext}}</div>
+		</div>
+		<div id="name" class="title">{{name}}<button ref="button" class="button" @click="liClick">打开单位介绍</button></div>
+		<div class="basic-information">
+			<img class="frame" v-bind:src="portraiticon">
+			<div class="price">
+				<div class="price-case"><img class="price-icon" src="../images/resource_legacy_food.png" title="食物"><div class="price-num">{{food}}</div></div>
+				<div class="price-case"><img class="price-icon" src="../images/resource_legacy_wood.png" title="木材"><div class="price-num">{{wood}}</div></div>
+				<div class="price-case"><img class="price-icon" src="../images/resource_legacy_gold.png" title="钱币"><div class="price-num">{{gold}}</div></div>
+				<div class="price-case"><img class="price-icon" src="../images/resource_legacy_export.png" title="茶叶"><div class="price-num">0</div></div>
+				<div class="price-case"><img class="price-icon" src="../images/resource_legacy_pop.png" title="人口"><div class="price-num">{{populationcount}}</div></div>
+			</div>
+			<div class="basicAttribute">
+				<div class="attribute-case">
+					<img class="attribute-icon" src="../images/stat_large_hp.png" title="血量">
+					{{initialhitpoints}}
+				</div>
+				<div class="attribute-case">
+					<img class="attribute-icon" src="../images/stat_large_armor.png" title="防御">
+					{{armor.value}}
+					<img class="attribute-icon2" v-bind:src="armor.type">
+				</div>
+				<div class="attribute-case">
+					<img class="attribute-icon" src="../images/stat_large_speed.png" title="速度">
+					{{maxvelocity}}
+				</div>
+				<div class="attribute-case">
+					<img class="attribute-icon" src="../images/training_time.png" title="训练时间">
+					{{trainpoints}}
+				</div>
+			</div>
+		</div>
+		<div class="type"><div class="type-text" v-for="i in unittype">{{i}}</div></div>
+		<div class="detail-attribute">
+			<div class="detail-attribute-case"><img class="detail-attribute-icon" src="../images/stat_icon_ranged.png"><a id="range-attack">{{rangedAttack.value}}</a></div>
+			<div class="detail-attribute-case"><img class="detail-attribute-icon" src="../images/stat_icon_range.png">{{rangedAttack.range}}</div>
+			<div class="detail-attribute-case"><img class="detail-attribute-icon" src="../images/stat_large_rof.png">{{rangedAttack.rof}}</div>
+		</div>
+		<div class="detail-attribute" v-bind:style="raHeight">
+			<div class="detail-attribute-case"></div>
+			<div class="detail-attribute-case" v-for="i in rangedAttack.arr"><img class="detail-attribute-icon" v-bind:src="i.arrIcon">× {{i.arrValue}}</div>
+		</div>
+		<div class="detail-attribute">
+			<div class="detail-attribute-case"><img class="detail-attribute-icon" src="../images/stat_icon_attack.png"><a id="melee-attack">{{handAttack.value}}</a></div>
+			<div class="detail-attribute-case"><img class="detail-attribute-icon" src="../images/stat_large_rof.png">{{handAttack.rof}}</div>
+		</div>
+		<div class="detail-attribute" v-bind:style="haHeight">
+			<div class="detail-attribute-case"></div>
+			<div class="detail-attribute-case" v-for="i in handAttack.arr"><img class="detail-attribute-icon" v-bind:src="i.arrIcon">× {{i.arrValue}}</div>
+		</div>
+		<div class="detail-attribute">
+			<div class="detail-attribute-case"><img class="detail-attribute-icon" src="../images/stat_icon_siege.png"><a id="siege-attack">{{buildingAttack.value}}</a></div>
+			<div class="detail-attribute-case"><img class="detail-attribute-icon" src="../images/stat_icon_range.png">6</div>
+			<div class="detail-attribute-case"><img class="detail-attribute-icon" src="../images/stat_large_rof.png">{{buildingAttack.rof}}</div>
+		</div>
+		<div class="tactic">
+			<img class="tactic-icon" src="../images/tactics_volley_cur.png">
+			<img class="tactic-icon" src="../images/tactics_stagger_avl.png">
+			<img class="tactic-icon" src="../images/tactics_melee_avl.png">
+			<img class="tactic-icon" src="../images/tactics_defend_avl.png">
+			<img class="tactic-icon" src="../images/tactics_stand_ground_avl.png">
+		</div>
+		<div>
+			<img class="flag" src="../images/flag_german.png">
+			<img class="flag" src="../images/flag_egyptian.png">
+			<img class="flag" src="../images/flag_french.png">
+			<img class="flag" src="../images/flag_british.png">
+			<img class="flag" src="../images/postgame_flag_inca.png">
+			<img class="flag" src="../images/postgame_flag_indian.png">
+			<img class="flag" src="../images/postgame_flag_iroquois.png">
+			<img class="flag" src="../images/postgame_flag_japanese.png">
+		</div>
+			<div class="upgrade">
+			<a href=""><img id="upgrade1" class="upgrade-icon" src="../images/upgrade1.png"></a>
+			<a href="#"><img id="upgrade2" class="upgrade-icon" src="../images/upgrade2.png"></a>
+			<a href="#"><img id="upgrade3" class="upgrade-icon" src="../images/upgrade3.png"></a>
+		</div>
+		<div></div>
+	</div>
+	<div></div>
+</body>

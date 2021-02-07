@@ -1,0 +1,69 @@
+[v-cloak] {
+	display: none;
+}
+
+* {
+	margin: 0; padding: 0;
+}
+
+a {
+	text-decoration: none;
+    color: black;
+}
+body {
+	font: 16px/20px Microsoft Yahei;
+	color: white;
+	background: #000000 url(../images/end_bg.png) no-repeat center 100px;
+    background-size: 2500px;
+}
+
+.header {
+	height: 120px;
+    margin-bottom: 24px;
+	background-image: linear-gradient(to right, #392916, #624A2D, #392916);
+	color: #DED169;
+	border-bottom: 3px solid #B1A56A;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header-text {
+	font: 38px/56px Microsoft Yahei;
+}
+
+.body {
+	width: 980px;
+	margin: auto;
+	background: #FFFFFF;
+	color: black;
+	border: 3px solid #CABA71;
+	border-radius: 8px;
+}
+
+.body-header {
+	padding: 20px 60px;
+	box-shadow: 0px 3px 6px 0 #00224d0d;
+}
+
+.body-box {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 24px;
+}
+
+.box {
+	width: 166px;
+	padding: 10px;
+}
+
+.box-img {
+	width: 162px;
+    border: 2px solid #CABA71;
+    border-radius: 8px;
+}
+
+.box-text {
+	text-align:center;
+}

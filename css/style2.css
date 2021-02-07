@@ -1,0 +1,188 @@
+[v-cloak] {
+	display: none;
+}
+
+* {
+	margin: 0; padding: 0;
+}
+
+.grey {
+	color: #9195a3;
+}
+
+body {
+	font: 18px/24px Microsoft Yahei;
+	color: white;
+	background: #000000 url(../images/end_bg.png) no-repeat center 100px;
+    background-size: 2500px;
+}
+
+.body {
+	width: 980px;
+	padding: 0 20px;
+	margin: auto;
+}
+
+.list {
+	display: none;
+    position: fixed;
+    top: 240px;
+    width: 480px;
+    background-image: linear-gradient(to right, #392916e0, #624A2De0, #392916e0);
+    left: 0;
+    right: 0;
+    margin: auto;
+	z-index: 1;
+	border: 3px solid #CABA71;
+	border-radius: 8px;
+	font: 21px/40px Microsoft Yahei;
+	padding: 30px 40px;
+	color: #FAA90E;
+}
+
+.srt {
+	padding: 0 0 20px 0;
+}
+
+.header1 {
+	height: 120px;
+    margin-bottom: 24px;
+	background-image: linear-gradient(to right, #392916, #624A2D, #392916);
+	color: #DED169;
+	border-bottom: 3px solid #B1A56A;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header2 {
+	font: 38px/56px Microsoft Yahei;
+}
+
+.title {
+	font: 56px/56px Microsoft Yahei;
+}
+
+.button {
+	padding: 10px 24px;
+    vertical-align: middle;
+	margin: 0 32px;
+	cursor: pointer;
+}
+
+.basic-information {
+	margin: 30px 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.frame {
+	width: 228px;
+	height: 228px;
+	background-size: 240px 240px;
+	border: 3px solid #CABA71;
+	border-radius: 8px;
+}
+
+.price {
+	width: 320px;
+}
+
+.price-case {
+	position: relative;
+	text-align: center;
+	height: 45px;
+}
+
+.price-icon {
+	height: 48px;
+}
+
+.basicAttribute {
+	padding: 3px 0 0 0;
+}
+
+.price-num {
+    line-height: 48px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.attribute-icon {
+	height: 46px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.attribute-icon2 {
+	height: 20px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.type {
+	margin-bottom: 20px;
+	display: flex;
+}
+
+.type-text{
+	margin: 0 10px;
+    border: 3px solid #b39a84;
+    border-radius: 8px;
+    padding: 5px;
+    background: #686868;
+}
+
+.detail-attribute {
+	display: flex;
+	flex-direction: row;
+}
+
+.detail-attribute-case{
+	height: 42px;
+	width: 100px;
+}
+
+.detail-attribute-icon {
+	height: 24px;
+    vertical-align: middle;
+    margin: 10px;
+	
+}
+
+.tactic {
+    margin: 10px 0;
+	padding: 16px 0 0 0;
+}
+
+.tactic-icon{
+	height: 80px;
+	margin-right: 10px;
+}
+
+
+
+.flag {
+	height: 50px;
+    margin: 10px 0;
+}
+
+.upgrade {
+	margin: 10px 0;
+	
+}
+
+.upgrade-icon{
+	height: 80px;
+	margin-right: 10px;
+	
+}
+
+.cs3 {
+	height: 60px;
+	width: 60px;
+	
+	vertical-align: middle;
+}

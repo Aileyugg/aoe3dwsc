@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单位手册主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/script3.js"></script>
+</head>
+<body>
+    <div>
+		<div class="header">
+			<div class="header-text">帝国时代3：决定版 单位手册</div>
+			<div>Age of Empires 3 : Definitive Edition Unit Manual</div>
+		</div>
+	</div>
+    <div id="body" class="body" v-cloak>
+        <div class="body-header">步兵</div>
+        <div class="body-box">
+            <div class="box" v-for="i in unitsArr">
+                <a target="_blank" v-bind:href="i.href"><img class="box-img" v-bind:src="i.portraiticon"></a>
+                <div class="box-text"><a target="_blank" v-bind:href="i.href">{{i.displayname}}</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
