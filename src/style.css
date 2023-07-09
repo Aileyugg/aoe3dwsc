@@ -1,0 +1,35 @@
+html, body, p  {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: arial,sans-serif;
+  color: #ddd;
+  background: #222;
+}
+
+/* .pointer-none {
+  pointer-events: none;
+} */
+
+@font-face {
+  font-family: "ifont";
+  src: url('//at.alicdn.com/t/c/font_4012355_t2vk4mmrms.woff2?t=1681305523894') format('woff2');
+}
+
+.ifont {
+  font-family: "ifont" !important;
+  font-style: normal;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.icon-list:before {
+  content: "\e834";
+}
