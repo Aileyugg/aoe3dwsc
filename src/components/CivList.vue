@@ -1,5 +1,5 @@
 <script setup>
-import { filter, lang } from '../modules'
+import { lang } from '../modules'
 import civsData from '../assets/civs.json'
 
 const props = defineProps({
@@ -47,6 +47,7 @@ console.log(civsObj);
     align-items: center;
     text-decoration: none;
     transition: all 0.12s;
+    color: @link-color;
 
     &:hover {
       transform: scale(1.1);

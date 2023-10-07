@@ -1,8 +1,8 @@
 <script setup>
-import { createCiv, initCiv } from '../modules'
-import UnitList from '../components/UnitList.vue'
-import UnitCountList from '../components/UnitCountList.vue'
-import CivList from './CivList.vue'
+import { createCiv, initCiv } from '@/modules'
+import UnitList from '@/components/UnitList.vue'
+import UnitCountList from '@/components/UnitCountList.vue'
+import CivList from '@/components/CivList.vue'
 
 const civName = location.hash.slice(1) || 'Spanish'
 // console.log(initCiv('Spanish'));
@@ -42,7 +42,7 @@ const civ = createCiv(civName)
   width: 920px;
   border-radius: 16px;
   padding: 36px 26px;
-  background: #fff;
+  background: @body-color;
 }
 
 .civ-name {
@@ -63,10 +63,19 @@ const civ = createCiv(civName)
 
   > p {
     white-space: pre-wrap;
+    line-height: 1.6rem;
   }
 }
 
 .unit-list {
   padding: 0;
+}
+</style>
+
+<style>
+.civ-brief > p > b {
+  font-size: 18px;
+  line-height: 1.8rem;
+  color: #cc3;
 }
 </style>

@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue';
-import { createCiv } from '../modules'
-import CardList from './CardList.vue';
-import { romanAge } from '../assets/langMap.json'
-import { lang } from '../modules';
+import { createCiv } from '@/modules'
+import CardList from '@/components/CardList.vue';
+import { romanAge } from '@/assets/langMap.json'
+import { lang } from '@/modules';
 
 const civName = location.hash.slice(1) || 'Spanish'
 const civ = createCiv(civName)

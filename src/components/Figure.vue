@@ -38,7 +38,7 @@ function tettt(data) {
 
     if (rangeAry.length === 0) return
 
-    
+
     return rangeAry.join(' ~ ')
   })
   return {
@@ -123,15 +123,15 @@ function filter(value) {
   flex-wrap: wrap;
   gap: 6px 28px;
 
-  >div {
+  > div {
 
-    >img {
+    > img {
       float: left;
       height: 23px;
       margin: 1px 6px 1px 0;
     }
 
-    >span {
+    > span {
       line-height: 1.6rem;
     }
   }

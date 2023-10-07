@@ -5,15 +5,15 @@ let MainView
 const { pathname } = location
 
 if (pathname === '/') {
-  MainView = defineAsyncComponent(() => import('./components/Index.vue'))
+  MainView = defineAsyncComponent(() => import('@/views/Index.vue'))
 } else if (pathname === '/html/civ.html') {
-  MainView = defineAsyncComponent(() => import('./components/Civ.vue'))
+  MainView = defineAsyncComponent(() => import('@/views/Civ.vue'))
 } else if (pathname === '/html/unit.html') {
-  MainView = defineAsyncComponent(() => import('./components/Unit.vue'))
+  MainView = defineAsyncComponent(() => import('@/views/Unit.vue'))
 } else if (pathname === '/html/card.html') {
-  MainView = defineAsyncComponent(() => import('./components/Card.vue'))
+  MainView = defineAsyncComponent(() => import('@/views/Card.vue'))
 } else {
-  MainView = defineAsyncComponent(() => import('./components/Index.vue'))
+  MainView = defineAsyncComponent(() => import('@/views/Index.vue'))
 }
 
 
@@ -21,7 +21,9 @@ if (pathname === '/') {
 
 <template>
   <header>
-    <p>帝国时代3单位手册</p>
+    <p>
+      <a title="返回首页" href="/index.html">帝国时代3单位手册</a>
+    </p>
   </header>
   <main>
     <Suspense>
@@ -46,6 +48,11 @@ header {
 
   > p {
     font: 600 28px/32px Arial, 'Microsoft YaHei';
+
+    a {
+      color: #ddd;
+      text-decoration: none;
+    }
   }
 }
 

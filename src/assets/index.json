@@ -1,17 +1,21 @@
 [
   {
+    "id": "infantry",
     "dpName": "步兵",
     "units": ["Pikeman","Musketeer","Explorer","Rodelero","Crossbowman","Halberdier","Skirmisher","Longbowman","Strelet","Janissary","Minuteman","Dopplesoldner","Cacadore","MercLandsknecht","MercSwissPikeman","MercHighlander","MercRonin","MercJaeger","MercBarbaryCorsair","xpTomahawk","xpAenna","xpMusketWarrior","MercNinja","xpWarClub","xpWarBow","xpCoyoteMan","xpMacehualtin","xpWarRifle","xpEagleKnight","xpJaguarKnight","xpArrowKnight","xpPumaMan","xpSkullKnight","MercFusilier","xpColonialMilitia","xpWarrior","ypKensei","ypYumi","ypAshigaru","ypRajput","ypUrumi","ypChuKoNu","ypArquebusier","ypQiangPikeman","ypChangdao","ypMercIronTroop","ypYamabushi","ypSepoy","ypNatMercGurkha","ypWokouBlindMonk","ypShinobiHorse","ypWokouPirate","ypDacoit","ypWokouWaywardRonin","ypThuggee","ypIrregular","ypPeasant","ypMercArsonist","deJungleBowman","deIncaSpearman","deIncaRunner","deChasqui","deBolasWarrior","deSlinger","deMaceman","deCarolean","deNizam","deEagleScout","deStateMilitia","deRifleman","deRegular","deMinuteman","deMercZouave","deBowmanLevy","deGunnerLevy","deSpearmanLevy","deGascenya","deShotelWarrior","deNeftenya","deMaigadi","deFulaWarrior","deMercAskari","deMercCannoneer","deMercAmazon"]
   },
   {
+    "id": "cavalry",
     "dpName": "骑兵",
     "units": ["Uhlan","CavalryArcher","Hussar","Dragoon","Cuirassier","Cossack","Spahi","Ruyter","WarWagon","Oprichnik","Lancer","MercMameluke","MercStradiot","MercBlackRider","MercManchu","MercHackapell","xpHorseman","xpMusketRider","MercElmeti","xpRifleRider","xpAxeRider","xpDogSoldier","xpCoupRider","xpBowRider","ypYabusame","ypNaginataRider","ypShogunTokugawa","ypSowar","ypZamburak","ypMahout","ypHowdah","ypSteppeRider","ypKeshik","ypIronFlail","ypMercYojimbo","ypWokouWanderingHorseman","ypMeteorHammer","ypMercJatLancer","ypDaimyoKiyomasa","ypDaimyoMototada","ypDaimyoMasamune","ypDaimyoRegicide","deSPCGenitour","deMercHarquebusier","deFinnishRider","deREVGranadero","deREVLlanero","deREVVaquero","deREVJagunco","deREVGaucho","deUSCavalry","deLegionDragoon","deOromoWarrior","deJavelinRider","deLifidi","deRaider","deMercKanuri","deMercZenata","deMercSudaneseRider"]
   },
   {
+    "id": "artillery",
     "dpName": "炮兵",
     "units": ["Cannon","Culverin","Falconet","Grenadier","Mortar","GreatBombard","OrganGun","Rocket","AbusGun","xpRam","xpMantlet","xpLightCannon","xpPetard","xpGatlingGun","MercGreatCannon","xpHorseArtillery","xpPetardNitro","ypHandMortar","ypFlyingCrow","ypFlameThrower","ypMercFlailiphant","ypSiegeElephant","ypFlamingArrow","ypMorutaru","deLeatherCannon","deQuakerGun","deMercCapturedMortar","deMercNapoleonGun","deLegionGrenadier","deSebastopolMortar","deMercGatlingCamel"]
   },
   {
+    "id": "native",
     "dpName": "土著",
     "units": ["NatJaguarWarrior","NatEagleWarrior","NatHorseArcher","NatSharktoothBowman","NatTomahawk","NatMantlet","NatBlowgunWarrior","NatRifleman","NatTracker","NatHuaminca","NatBolasWarrior","NatHolcanSpearman","NatClubman","NatAxeRider","NatBlackwoodArcher","NativeScout","NatAxeRiderDogSoldier","SPCGreatPlainsChief","SPCChiefDaughter","SPCCherokeeChief","SPCCherokeeArcher","SPCCherokeeHorseArcher","NatClubmanLoyal","NatBlowgunAmbusher","SPCAztecChief","SPCNativeBoy","NatLightningWarrior","NatKlamathRifleman","NatCheyenneRider","NatHuronMantlet","NatApacheCavalry","NatNavajoRifleman","NatMapucheClubman","ypNatSohei","ypNatRattanShield","ypNatTigerClaw","ypNatConquistador","ypNatChakram","ypNatWarElephant","deNatBolasRider","deMercCapturedMortar","deNatAkanMusketeer","deNatCamelRider","deNatAkanWarchief","deNatYorubaLegionary","deNatSomaliDarood","deNatSomaliJavelineer","deNatSudaneseDervish","deNatYorubaRider","deNatBerberSultan"]
   }

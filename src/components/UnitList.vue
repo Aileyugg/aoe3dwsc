@@ -50,6 +50,7 @@ for (const unit of props.units) {
     width: 100px;
     text-decoration: none;
     transition: all 0.12s;
+    color: @link-color;
 
     &:hover {
       transform: scale(1.1);

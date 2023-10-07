@@ -1,19 +1,19 @@
 <script setup>
 import { ref } from 'vue'
-import CivList from '../components/CivList.vue'
-import UnitList from '../components/UnitList.vue'
-import { civsAry } from '../modules/global'
-import indexData from '../assets/index.json'
+import CivList from '@/components/CivList.vue'
+import UnitList from '@/components/UnitList.vue'
+import { civsAry } from '@/modules/global'
+import indexData from '@/assets/index.json'
 
 </script>
 
 <template>
   <div class="index">
-    <div class="civs">
+    <div class="civs" id="civs">
       <header>查看文明</header>
       <CivList :civs="civsAry" />
     </div>
-    <div class="units" v-for="item in indexData">
+    <div class="units" v-for="item in indexData" :id="item.id">
       <header>{{ item.dpName }}</header>
       <UnitList :units="item.units" />
     </div>
@@ -25,7 +25,7 @@ import indexData from '../assets/index.json'
     </header>
     <ul class="nav">
       <li v-for="item in indexData">
-        <a href="">{{ item.dpName }}</a>
+        <a :href="`#${item.id}`">{{ item.dpName }}</a>
       </li>
     </ul>
     <header class="nav-title">
@@ -52,7 +52,7 @@ import indexData from '../assets/index.json'
   .box() {
     margin-bottom: 18px;
     border-radius: 16px;
-    background: #2f3233;
+    background: @body-color;
   }
 }
 
@@ -83,7 +83,7 @@ aside {
   // height: 648.6px;
   border-radius: 16px;
   padding: 20px 0;
-  background: #2f3233;
+  background: @body-color;
 }
 
 .nav-title {
@@ -109,12 +109,13 @@ aside {
     font-size: 1.1rem;
 
     &:hover {
-      background: #ddd;
+      background: #666;
     }
 
     > a {
       display: block;
       padding: 8px 0;
+      color: #ddd;
     }
   }
 }

@@ -15,4 +15,17 @@ export default defineConfig({
       },
     },
   },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src')
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        additionalData: '@import "@/assets/styles/global.less";'
+      }
+    }
+  }
 })

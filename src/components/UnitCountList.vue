@@ -43,24 +43,25 @@ for (const [unit, count] of Object.entries(props.units)) {
 .unit {
   padding: 12px;
 
-  >a {
+  > a {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100px;
     text-decoration: none;
     transition: all 0.12s;
+    color: @link-color;
 
     &:hover {
       transform: scale(1.1);
     }
 
-    >img {
+    > img {
       height: 100px;
       border-radius: 12px;
     }
 
-    >span {
+    > span {
       margin-top: 10px;
     }
   }
